@@ -27,6 +27,7 @@ Note: A client_secret.json file is needed to run the program. This file can be o
 - Download the JSON file.
 - Copy the JSON file to your code directory and rename it to client_secret.json
 ```
+Note: To use the the client_secret.json supplied by the creator of the repository, share the Google Sheets with them as well.
 
 ## License
 MIT License
