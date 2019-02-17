@@ -19,7 +19,7 @@ Note: A client_secret.json file is needed to run the program. This file can be o
 1. Contact the creator of the repository
 2. Generate your own by going to https://console.cloud.google.com/, creating a new project, enabling Google Drive and Google Sheets API and downloading the credentials for a web application.
 
-
+## License
 MIT License
 
 Copyright (c) 2019 Sean Remedios
