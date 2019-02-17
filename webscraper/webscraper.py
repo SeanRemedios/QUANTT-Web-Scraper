@@ -7,13 +7,16 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Class for performing all actions in the browser
 class Browser():
 	def __init__(self, payload):
 		self.payload = payload
-		self.browser = webdriver.Chrome(ChromeDriverManager().install())
+		options = Options()
+		options.headless = True
+		self.browser = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
 		self.cookies = []
 
 	# Gets all the data for a row
