@@ -3,6 +3,7 @@ import time
 import pickle
 import os.path
 import datetime
+import pytz
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -159,8 +160,11 @@ class GoogleDrive():
 		RANGE_NAME = 'Data!A:K'
 		VALUE_INPUT_OPTION = 'USER_ENTERED'
 		INSERT_DATA_OPTION = 'INSERT_ROWS'
-
-		row.append(str(datetime.date.today()))
+		
+		eastern = pytz.timezone('US/Eastern')
+		now = datetime.datetime.now(eastern)
+		datestr = now.strftime("%Y-%m-%d")
+		row.append(datestr)
 		values = [row[::-1]]
 		body = {'values': values}
 		result = self.service.spreadsheets().values().append(spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME, valueInputOption=VALUE_INPUT_OPTION, insertDataOption=INSERT_DATA_OPTION, body=body).execute()
