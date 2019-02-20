@@ -15,6 +15,21 @@ quantt-web-scraper@quantt.iam.gserviceaccount.com
 python2.7 webscraper.py <Quantopian Email> <Quantopian Password> <Google Sheets Link>
 ```
 
+## Automatically Run
+To automatically run the program everyday, this can be done in two ways:
+1. Crontab
+a. Open a terminal window
+b. Open the crontab file by entering the following command:
+```
+crontab -e
+```
+c. Enter the following command to run the program every Monday-FRIDAY AT 6pm EST:
+```
+* 18 * * 1-5 python2.7 webscraper.py <Quantopian Email> <Quantopian Password> <Google Sheets Link>
+```
+Note: The program will only run if your computer is on at 6pm. 
+2. Contact the owner of the repository to have it uploaded to a server.
+
 Note: A client_secret.json file is needed to run the program. This file can be obtained in two ways:
 1. Contact the creator of the repository
 2. Generate your own client_secret.json:
