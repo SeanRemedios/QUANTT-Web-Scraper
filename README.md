@@ -18,12 +18,12 @@ python2.7 webscraper.py <Quantopian Email> <Quantopian Password> <Google Sheets 
 ## Automatically Run
 To automatically run the program everyday, this can be done in two ways:
 1. Crontab
-a. Open a terminal window
-b. Open the crontab file by entering the following command:
+1a. Open a terminal window
+1b. Open the crontab file by entering the following command:
 ```
 crontab -e
 ```
-c. Enter the following command to run the program every Monday-FRIDAY AT 6pm EST:
+1c. Enter the following command to run the program every Monday-FRIDAY AT 6pm EST:
 ```
 * 18 * * 1-5 python2.7 webscraper.py <Quantopian Email> <Quantopian Password> <Google Sheets Link>
 ```
