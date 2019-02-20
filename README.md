@@ -11,7 +11,7 @@ For this program to work correctly, the Google Sheets file must be set up correc
 For example: <br>
   Google Sheets (Left to Right) - John, Mark, Katie, Ralph <br>
   Quantopian (Bottom to Top) - John, Mark, Katie, Ralph <br>
-- The following template has been provided to make the setup easier: <br> https://docs.google.com/spreadsheets/d/10yBOrpt9_QUQ5wM7Ho1MjVelOt7GR2useRA0UU0UpkI/edit?usp=sharing
+- The following template has been provided to make the setup easier: <br> https://docs.google.com/spreadsheets/d/10yBOrpt9_QUQ5wM7Ho1MjVelOt7GR2useRA0UU0UpkI/edit#gid=0
 
 ## How to use
 1. Install the requirements
