@@ -27,7 +27,8 @@ crontab -e
 ```
 * 18 * * 1-5 python2.7 webscraper.py <Quantopian Email> <Quantopian Password> <Google Sheets Link>
 ```
-Note: The program will only run if your computer is on at 6pm. 
+Note: The program will only run if your computer is on at 6pm. <br>
+
 2. Contact the owner of the repository to have it uploaded to a server.
 
 Note: A client_secret.json file is needed to run the program. This file can be obtained in two ways:
